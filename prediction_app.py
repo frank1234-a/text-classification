@@ -41,7 +41,7 @@ user_input = st.text_area("Enter news: ", height=400)
 if st.button("Analyze"):
 
     #Get the readability score 
-    readability = user_input.apply(lambda x: textstat.flesch_reading_ease(str(x)))
+    readability = textstat.flesch_reading_ease(str(user_input))
 
     #Clean text
     cleaned_input = reg_text(user_input) 
