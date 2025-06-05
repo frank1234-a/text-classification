@@ -1,0 +1,6 @@
+streamlit
+scikit-learn
+nltk
+textstat
+joblib
+scipy
